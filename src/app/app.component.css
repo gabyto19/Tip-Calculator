@@ -1,0 +1,294 @@
+.main {
+  width: 70%;
+  height: 500px;
+  background-color: white;
+  margin: auto;
+  position: relative;
+  top: 150px;
+  border-radius: 2em;
+  display: flex;
+}
+
+.Left-side {
+  width: 50%;
+  margin: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-content: space-around;
+  align-items: flex-start;
+  position: relative;
+  left: 6%;
+}
+.Left-side input {
+  border: none;
+  background-color: #f3f9fa;
+  border-radius: 0.5em;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 900;
+  text-align: end;
+  font-size: 20px;
+}
+.Left-side input:focus {
+  outline: #26c2ae 2px solid;
+}
+.Left-side label {
+  color: #5e7a7d;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 900;
+}
+.Left-side div {
+  display: flex;
+  flex-direction: column;
+}
+.Right-side {
+  background-color: #00474b;
+  width: 50%;
+  height: 85%;
+  margin: 5%;
+  border-radius: 1.3em;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 900;
+}
+
+.Right-side p {
+  color: white;
+
+  margin-bottom: 0;
+}
+.Right-side button {
+  width: 70%;
+  margin: auto;
+  display: block;
+  position: relative;
+  top: 25%;
+  height: 45px;
+  border: none;
+  border-radius: 0.3em;
+  background-color: #9fe8df;
+
+  color: #00474b;
+  font-size: 1.5em;
+}
+.tip-amount {
+  display: flex;
+  margin: auto;
+  justify-content: space-around;
+  margin-top: 5%;
+  align-items: center;
+  flex-direction: column;
+  width: 30%;
+}
+.tip-amount div:first-child {
+  width: 82px;
+  margin-top: 10%;
+}
+.tip-amount div:nth-child(2) {
+  width: 82px;
+  margin-top: 25px;
+}
+.tip-amount h1 {
+  color: #26c2ae;
+}
+.tip-amount label {
+  color: #7f9d9f;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 900;
+  font-size: 0.7em;
+}
+
+.kotlet {
+  display: flex;
+  margin-top: 5%;
+}
+.Bill {
+  width: 85%;
+}
+.buttons {
+  display: flex;
+  flex-direction: row !important;
+  flex-wrap: wrap;
+  width: 90%;
+}
+.buttons button,
+.buttons input {
+  margin-right: 15px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 5px;
+}
+
+.buttons button {
+  width: 120px;
+  height: 50px;
+  background-color: #00474b;
+  border-radius: 5px;
+  font-weight: 900;
+  font-family: "IBM Plex Sans", sans-serif;
+  color: #ffffff;
+}
+
+.buttons input {
+  width: 117px;
+  height: 49px;
+  background-color: #f3f9fa;
+  text-align: center;
+  font-size: 1.2em;
+  color: #547878;
+  font-weight: bolder;
+}
+
+.buttons input.active {
+  text-align: end;
+  color: #00474b;
+  padding: 5px;
+  width: 111px;
+  height: 41px;
+}
+
+.buttons input::-webkit-outer-spin-button,
+.buttons input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.buttons input:focus {
+  outline: none;
+}
+
+.inputer {
+  height: 40px;
+  padding-right: 20px;
+}
+.inputer::-webkit-outer-spin-button,
+.inputer::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.person {
+  width: 85%;
+}
+.person img {
+  position: absolute;
+  bottom: 10%;
+  width: 28px;
+  left: 10px;
+}
+.person div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.Bill img {
+  position: absolute;
+  width: 20px;
+  top: 14%;
+  left: 3%;
+}
+@media only screen and (min-width: 1448px) {
+  .person img {
+    position: absolute;
+    bottom: 13%;
+    width: 28px;
+    left: 10px;
+  }
+
+  .Bill img {
+    position: absolute;
+    width: 20px;
+    top: 17%;
+    left: 3%;
+  }
+  .custom {
+    top: 53% !important;
+    left: 284px !important;
+  }
+}
+
+.perLine {
+  outline: red 2px solid;
+}
+.custom {
+  position: absolute;
+  top: 60%;
+  left: 148px;
+  color: #547878;
+  font-weight: 900;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+@media only screen and (max-width: 971px) {
+  .main {
+    height: 750px;
+    top: 30px;
+    flex-direction: column;
+  }
+  .Left-side,
+  .Right-side {
+    width: 90%;
+  }
+  .Right-side button {
+    top: 6%;
+  }
+}
+@media screen and (min-width: 731px) and (max-width: 971px) {
+  .custom {
+    top: 54%;
+    left: 283px;
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  .custom {
+    top: 62% !important;
+    left: 147px !important  ;
+  }
+  .Bill img {
+    top: 11%;
+  }
+  .person img {
+    bottom: 6%;
+  }
+}
+@media only screen and (max-width: 492px) {
+  .buttons button,
+  .buttons input {
+    margin-top: 5px;
+    margin-right: 5px;
+  }
+  .buttons button{
+    width: 100px;
+    height: 45px;
+  }
+  .buttons input{
+    width: 97px;
+    height: 44px;
+  }
+  .custom {
+    top: 58% !important;
+    left: 116px !important;
+    font-size: 1.3em;
+  }
+  .Bill img {
+    top: 14%;
+  }
+  .person img {
+    bottom: 9%;
+  }
+
+}
+@media only screen and (max-width: 465px) {
+  .buttons button{
+    width: 80px;
+  }
+  .buttons input{
+    width: 77px;
+  }
+  .custom{
+    top: 59% !important;
+    left: 92px !important;
+    font-size: 1.1em;
+}
+}
